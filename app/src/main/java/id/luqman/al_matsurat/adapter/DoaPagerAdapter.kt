@@ -15,4 +15,7 @@ class DoaPagerAdapter(fm: FragmentManager, private val pages: List<Page>): Fragm
         return pages.size
     }
 
+    override fun getPageTitle(position: Int): CharSequence? {
+        return pages[position].title
+    }
 }
