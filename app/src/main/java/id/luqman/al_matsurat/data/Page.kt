@@ -16,5 +16,5 @@ data class Page(
     var translation: String,
 
     @SerializedName("pengulangan")
-    var repetition: Int
+    var repetition: String
 )
