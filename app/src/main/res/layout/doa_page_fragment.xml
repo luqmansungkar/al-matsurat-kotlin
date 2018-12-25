@@ -1,21 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
 >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/doa_title"
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:src="@drawable/tiledback3"
+            android:scaleType="fitXY"
     />
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:id="@+id/doa_arabic"
-    />
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:paddingBottom="10dp">
 
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:id="@+id/doa_translation"
-    />
-</LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="45dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:paddingEnd="45dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/doa_arabic"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/text_color_blue"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/text_color_blue"
+                    android:text="@string/terjemahan_text"
+                    android:textColor="#ffffff"
+                    android:padding="2dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/doa_translation"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+            />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
