@@ -8,6 +8,7 @@ import android.view.MenuItem
 import id.luqman.al_matsurat.adapter.DoaPagerAdapter
 import id.luqman.al_matsurat.data.DataHelper
 import org.jetbrains.anko.find
+import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
             when(item?.itemId){
                 R.id.setting_menu -> {
-                    //buka activity bary
+                    startActivity<SettingActivity>()
                     return true
                 }
                 R.id.about_menu -> {

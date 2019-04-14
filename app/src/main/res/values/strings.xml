@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Al-Matsurat</string>
     <string name="terjemahan_text">TERJEMAHAN</string>
+    <string name="ukuran_huruf_arab_text">Ukuran huruf Arab</string>
+    <string name="ukuran_huruf_terjemah_text">Ukuran huruf terjemah</string>
 </resources>
